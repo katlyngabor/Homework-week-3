@@ -1,4 +1,3 @@
-
 var cID= clientID || '';
 var cSECRET= clientSecret||'';
 
@@ -10,13 +9,15 @@ var info=$.getJSON('https://api.github.com/users/katlyngabor').done( function (d
 
 });
 
-var templateTwo= _.template( $('#main_body_template').html() );
 
+var templateTwo= _.template( $('#main_body_template').html());
+ 
 
-$.getJSON('https://api.github.com/users/katlyngabor/repos').done(function (data) {
-	
-	$('#main-body').html( templateTwo(data[0]));
-	
+var trial= $.getJSON('https://api.github.com/users/katlyngabor/repos').done(function (data) {
+_.each(data,function(info){
+$('#main-body').append(templateTwo(info));
+
 });
 
-// console.log(info_two);
+});
+

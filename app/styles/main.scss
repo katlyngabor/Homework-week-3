@@ -8,7 +8,7 @@ header {
 #sidebar {
 	width: 200px;
 	float:left;
-	margin-left:30px;
+	
 }
 
 img.logo-image {
@@ -22,6 +22,7 @@ img.profile-image {
 h1.name {
 	font-size:18px;
 	margin:0px;
+	color:red;
 }
 
 h2.user-name {
@@ -44,4 +45,9 @@ h2.user-name {
 
 #main-body{
 	width:600px;
+
+
+	.repo-names {
+		float:right;
+	}
 	
