@@ -21,3 +21,5 @@ $('#main-body').append(templateTwo(info));
 
 });
 
+console.log(trial);
+

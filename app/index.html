@@ -9,11 +9,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-
-
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-
-
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -70,8 +66,10 @@
         <div class="body-links"></div>
     </div>
 
-
-    <div class="repo-names"><%=name%></div>
+    <ul class="repos">
+    <li><span class="octicon octicon-repo-pull"></span><a class="repo-names" href=<%=url%>><%=name%></a></li>
+    <div class="description"><%=description%></div>
+    </ul>
 
  </script>
 
