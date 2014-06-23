@@ -1,22 +1,29 @@
 
 @import 'bourbon/bourbon';
 
+
 header {
   width: 1000px;
 }
 
 #sidebar {
-	width: 200px;
+	width: 150px;
 	float:left;
-	
-}
-
-img.logo-image {
-  width:20px;
+	padding-left:50px;
 }
 
 img.profile-image {
 	width:150px;
+}
+
+.date-created{
+
+	font-size:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+
 }
 
 h1.name {
@@ -26,24 +33,90 @@ h1.name {
 
 h2.user-name {
 	font-size:14px;
-	color:grey;
+	color:#878787;
 	margin:0px;
+	color:#878787;
+	padding-bottom:10px;
 }
 
-.date-created{
-	font-size:10px;
+.profile-stats{
+	margin-top: 10px;
+}
+
+.followers{
+	text-decoration:none;
+	color:#878787;
+
+}
+
+.following{
+	text-decoration:none;
+	color:#878787;
+
 }
 
 .followers-text{
 	font-size:8px;
+	color:#878787;
 }
 
 .following-text{
 	font-size:8px;
+	color:#878787;
+	text-decoration:none;
 }
 
 #main-body{
-	width:600px;
+	width:400px;
+	float:left;
+	margin-left:20px;
 }
 
+ul{
+	border-top:1px solid;
+	border-color:#878787;
+	padding-left:0px;
+	padding-top:15px;
+}
 
+li {
+	list-style:none;
+	color:#878787;
+	width:250px;
+	display:inline-block;
+
+}
+
+.repo-names{
+	text-decoration:none;
+	color:#4284c2;
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	padding-left:10px;
+}
+
+.description{
+	font-size:8px;
+	width:400px;
+	display:inline-block;
+}
+
+.octicon-git-branch {
+	float:right;
+	color:#878787;
+	font-size:9px;
+}
+
+.octicon-star {
+	float:right;
+	color:#878787;
+	font-size:9px;
+	margin-right:10px;		
+}
+
+.language {
+	float:right;
+	color:#878787;
+	font-size:8px;
+	margin-right:10px;
+}
